@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-task-product-cards/static/css/main.030476c3.chunk.css",
+    "main.js": "/test-task-product-cards/static/js/main.9bf0ebbf.chunk.js",
+    "main.js.map": "/test-task-product-cards/static/js/main.9bf0ebbf.chunk.js.map",
+    "runtime-main.js": "/test-task-product-cards/static/js/runtime-main.7b6df5a7.js",
+    "runtime-main.js.map": "/test-task-product-cards/static/js/runtime-main.7b6df5a7.js.map",
+    "static/js/2.ffcd040e.chunk.js": "/test-task-product-cards/static/js/2.ffcd040e.chunk.js",
+    "static/js/2.ffcd040e.chunk.js.map": "/test-task-product-cards/static/js/2.ffcd040e.chunk.js.map",
+    "static/js/3.1d309f8d.chunk.js": "/test-task-product-cards/static/js/3.1d309f8d.chunk.js",
+    "static/js/3.1d309f8d.chunk.js.map": "/test-task-product-cards/static/js/3.1d309f8d.chunk.js.map",
+    "index.html": "/test-task-product-cards/index.html",
+    "static/css/main.030476c3.chunk.css.map": "/test-task-product-cards/static/css/main.030476c3.chunk.css.map",
+    "static/js/2.ffcd040e.chunk.js.LICENSE.txt": "/test-task-product-cards/static/js/2.ffcd040e.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/test-task-product-cards/static/media/sf-ui-display-semibold-58646eddcae92.34c6d94a.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b6df5a7.js",
+    "static/js/2.ffcd040e.chunk.js",
+    "static/css/main.030476c3.chunk.css",
+    "static/js/main.9bf0ebbf.chunk.js"
+  ]
+}
