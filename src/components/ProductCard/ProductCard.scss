@@ -1,0 +1,244 @@
+@import url("..//..//fonts/style.css");
+
+.card {
+  position: relative;
+  width: 500px;
+  padding: 45px;
+  background-color: #F8FAFC;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(14, 116, 160, 0.712);
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    width: 256px;
+  }
+
+  &__image {
+    width: 256px;
+    transition: all 1s;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.6);
+    } 
+  }
+
+  &__cost {
+    position: relative;
+    top: -30px;
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__select {
+    width: 258px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #2C2C2C;
+    font-family: 'SF UI Display Regular';
+    font-size: 12px;
+    padding-left: 20px;
+    border-radius: 20px;
+    position: relative;
+    align-self: flex-start;
+    font-weight: 500;
+
+
+    &:hover > ul {
+      display:inherit;
+      z-index: 1;
+  }
+
+    &-list {
+      display: none;
+      background-color: #fff;
+
+      position: absolute;
+      top: 70%;
+      right: 0;
+      padding-top: 5px;
+    }
+
+    &-item {
+      border-radius: 30px;
+      cursor: pointer;
+      padding-left: 20px;
+      width: 258px;
+      background-color: #fff;
+      display: inline-block;
+    }
+  }
+
+  &__btn {
+    width: 302px;
+    margin-left: 100px;
+    cursor: pointer;
+    background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+    border-color: #EFBB37 ;
+    color: #fff;
+    border-radius: 30px;
+    font-family: 'SF UI Display Semibold';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 39px;
+    transition: all 1s;
+
+    &:active {
+      background: linear-gradient(261.65deg, #f3cd6d -3.95%, #f1bd3a 109.44%);
+      border-color: transparent ;
+    }
+
+    &:focus {
+      border-color: transparent;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px rgba(113, 198, 231, 0.425);
+    }
+  }
+
+  &__counter {
+    display: flex;
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+
+  &__add {
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  &__minus {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    left: 10px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  &__quantity {
+    background-color: #E2E9F0;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 40px;
+    width: 92px;
+  }
+
+  &__new {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    line-height: 26px;
+    transition: all 1s;
+
+    &:hover {
+      background: linear-gradient(261.65deg, #36c8f5 -3.95%, #CF9E1F 109.44%);
+    } 
+  }
+
+  &__compare {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    align-self: flex-start;
+    padding-bottom: 25px;
+  }
+
+  &__radio {
+    margin-bottom: 10px;
+  
+    & input[type=radio] {
+      display: none;
+    }
+  
+    & label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 25px;
+      margin-right: 0;
+      line-height: 18px;
+      user-select: none;
+    
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    & label:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 18px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background: url(./radio-1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+     
+    
+    & input[type=radio]:checked + label:before {
+      background: url(./radio-2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
